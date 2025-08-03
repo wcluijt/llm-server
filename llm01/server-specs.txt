@@ -1,0 +1,55 @@
+System:
+  Kernel: 6.1.0-37-amd64 arch: x86_64 bits: 64 compiler: gcc v: 12.2.0 Console: pty pts/1
+    Distro: Debian GNU/Linux 12 (bookworm)
+Machine:
+  Type: Desktop System: Dell product: XPS 8900 v: N/A serial: <filter>
+  Mobo: Dell model: 0XJ8C4 v: A00 serial: <filter> UEFI-[Legacy]: Dell v: 2.9.1 date: 12/22/2020
+CPU:
+  Info: quad core model: Intel Core i7-6700K bits: 64 type: MT MCP arch: Skylake-S rev: 3 cache:
+    L1: 256 KiB L2: 1024 KiB L3: 8 MiB
+  Speed (MHz): avg: 825 high: 1000 min/max: 800/4200 cores: 1: 800 2: 1000 3: 800 4: 800 5: 800
+    6: 800 7: 800 8: 800 bogomips: 63999
+  Flags: avx avx2 ht lm nx pae sse sse2 sse3 sse4_1 sse4_2 ssse3 vmx
+Graphics:
+  Device-1: NVIDIA GM107 [GeForce GTX 745] driver: nvidia v: 575.57.08 arch: Maxwell
+    bus-ID: 01:00.0
+  Display: server: X.org v: 1.21.1.7 driver: gpu: nvidia,nvidia-nvswitch note: X driver n/a
+    tty: 238x61
+  API: OpenGL Message: GL data unavailable in console for root.
+Audio:
+  Device-1: Intel 100 Series/C230 Series Family HD Audio vendor: Dell driver: snd_hda_intel
+    v: kernel bus-ID: 00:1f.3
+  Device-2: NVIDIA GM107 High Definition Audio [GeForce 940MX] driver: snd_hda_intel v: kernel
+    bus-ID: 01:00.1
+  API: ALSA v: k6.1.0-37-amd64 status: kernel-api
+Network:
+  Device-1: Intel Ethernet I219-V vendor: Dell driver: e1000e v: kernel port: N/A bus-ID: 00:1f.6
+  IF: enp0s31f6 state: up speed: 1000 Mbps duplex: full mac: <filter>
+  Device-2: Realtek RTL8723BE PCIe Wireless Network Adapter driver: rtl8723be v: kernel
+    port: d000 bus-ID: 02:00.0
+  IF: wlp2s0 state: down mac: <filter>
+  IF-ID-1: br-0517ef92244d state: down mac: <filter>
+  IF-ID-2: docker0 state: down mac: <filter>
+Bluetooth:
+  Device-1: Realtek Bluetooth Radio type: USB driver: btusb v: 0.8 bus-ID: 1-11:3
+  Report: rfkill ID: hci0 rfk-id: 1 state: down bt-service: not found rfk-block: hardware: no
+    software: no address: see --recommends
+RAID:
+  Hardware-1: Intel SATA Controller [RAID mode] driver: ahci v: 3.0 bus-ID: 00:17.0
+  Device-1: md127 type: mdraid level: N/A status: inactive size: N/A
+  Info: report: N/A blocks: 5201 chunk-size: N/A
+  Components: Online: N/A Spare: 0: sdb
+Drives:
+  Local Storage: total: 1.85 TiB used: 83.82 GiB (4.4%)
+  ID-1: /dev/sda vendor: Western Digital model: WD20EADS-00R6B0 size: 1.82 TiB
+  ID-2: /dev/sdb vendor: LITE-ON model: CS1-SP32-11 M.2 2242 32GB size: 29.82 GiB
+Partition:
+  ID-1: / size: 1.79 TiB used: 83.82 GiB (4.6%) fs: ext4 dev: /dev/sda1
+Swap:
+  ID-1: swap-1 type: partition size: 976 MiB used: 0 KiB (0.0%) dev: /dev/sda5
+Sensors:
+  System Temperatures: cpu: 27.0 C pch: 50.0 C mobo: N/A gpu: nvidia temp: 44 C
+  Fan Speeds (RPM): cpu: 1502 mobo: 1006
+Info:
+  Processes: 157 Uptime: 17m Memory: 15.56 GiB used: 670.8 MiB (4.2%) Init: systemd
+  target: graphical (5) Compilers: gcc: 12.2.0 Packages: 712 Shell: Sudo v: 1.9.13p3 inxi: 3.3.26
