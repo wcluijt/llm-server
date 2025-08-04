@@ -20,6 +20,7 @@ source ~/.profile;
 which go && go version;
 
 ### Setup Additional PATH values
+echo "export PATH=/opt/rocm/hcc/bin:/opt/rocm/hip/bin:/opt/rocm/bin:/opt/rocm/hcc/bin:\$PATH;" >> ~/.profile;
 echo "export PATH=/usr/local/cuda-12/bin:\$PATH;" >> ~/.profile;
 source ~/.profile;
 
@@ -40,8 +41,8 @@ sed -i '/CMD \["serve"\]/s/serve/rpc/' ./Dockerfile.rpc;
 sed -i 's/11434/50052/g' ./Dockerfile.rpc;
 
 ### Build Docker Ollama RPC Server - CPU
-sudo docker build -t ollama:rpc-GH-10844-serve-cpu --build-arg FLAVOR=cpu -f ./Dockerfile .;
-sudo docker build -t ollama:rpc-GH-10844-rpc-cpu --build-arg FLAVOR=cpu -f ./Dockerfile.rpc .;
+#sudo docker build -t ollama:rpc-GH-10844-serve-cpu --build-arg FLAVOR=cpu -f ./Dockerfile .;
+#sudo docker build -t ollama:rpc-GH-10844-rpc-cpu --build-arg FLAVOR=cpu -f ./Dockerfile.rpc .;
 
 ### Build Docker Ollama RPC Server - CUDA
 #sudo docker build -t ollama:rpc-GH-10844-serve-cuda --build-arg FLAVOR=cuda-12 -f ./Dockerfile .;

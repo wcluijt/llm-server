@@ -18,10 +18,12 @@ the Debian 12 network installation:
 ```
 Linux Network Installs (64-bit) > Debian > Debian 12.0 (bookworm) > Specify preseed url
 ```
+
 For the preseed URL, type in the following:
 ```
-http://raw.githubusercontent.com/wcluijt/llm-server/refs/heads/main/llm01/preseed.cfg
+http://raw.githubusercontent.com/wcluijt/llm-server/refs/heads/main/preseed.cfg
 ```
+
 Then follow the installer prompts.
 
 **NOTE:** Be aware of the installation device path when you select a
@@ -42,6 +44,11 @@ cd ~/llm-server;
 ./setup-llm-server-prerequisites.sh;
 ```
 
+Then reboot the server to make sure the graphics drivers are loaded.
+```
+sudo systemctl reboot;
+```
+
 Setup Ollama RPC Server Prerequisites
 -------------------------------------
 
@@ -60,6 +67,7 @@ To start the Secondary Ollama RPC Server(s), execute the following:
 cd ~/llm-server/ollama/rpc;
 ./start-ollama-rpc.sh;
 ```
+
 The Secondary Ollama RPC Server(s) should be available on port `50052`.
 
 Take note of the IP Address of this server since you will need to
@@ -77,6 +85,7 @@ of the Secondary Ollama RPC Server(s) and execute the following:
 cd ~/llm-server/ollama/rpc;
 OLLAMA_RPC_SERVERS="<IP_Address_1>:50052,<IP_Address_2>:50052" ./start-ollama-serve.sh;
 ```
+
 The Primary Ollama RPC Server should be available on port `11434`.
 
 If you need to download a model, you can use the following command:

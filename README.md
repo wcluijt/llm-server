@@ -13,10 +13,12 @@ the Debian 12 network installation:
 ```
 Linux Network Installs (64-bit) > Debian > Debian 12.0 (bookworm) > Specify preseed url
 ```
+
 For the preseed URL, type in the following:
 ```
-http://raw.githubusercontent.com/wcluijt/llm-server/refs/heads/main/llm01/preseed.cfg
+http://raw.githubusercontent.com/wcluijt/llm-server/refs/heads/main/preseed.cfg
 ```
+
 Then follow the installer prompts.
 
 **NOTE:** Be aware of the installation device path when you select a
@@ -37,6 +39,11 @@ cd ~/llm-server;
 ./setup-llm-server-prerequisites.sh;
 ```
 
+Then reboot the server to make sure the graphics drivers are loaded.
+```
+sudo systemctl reboot;
+```
+
 Start the LLM Server
 --------------------
 
@@ -45,6 +52,7 @@ To start the LLM Server, execute the following:
 cd ~/llm-server;
 ./start-llm-server.sh;
 ```
+
 The LLM Server should be available on port `11434`.
 
 If you need to download a model, you can use the following command:
