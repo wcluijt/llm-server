@@ -15,12 +15,15 @@ git apply --3way ../GH-10844.patch;
 ### Install Go
 curl -LO https://go.dev/dl/go1.24.5.linux-amd64.tar.gz;
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.24.5.linux-amd64.tar.gz;
+export PATH=/usr/local/go/bin:$PATH;
 echo "export PATH=/usr/local/go/bin:\$PATH;" >> ~/.profile;
 source ~/.profile;
 which go && go version;
 
 ### Setup Additional PATH values
+export PATH=/opt/rocm/hcc/bin:/opt/rocm/hip/bin:/opt/rocm/bin:/opt/rocm/hcc/bin:$PATH;
 echo "export PATH=/opt/rocm/hcc/bin:/opt/rocm/hip/bin:/opt/rocm/bin:/opt/rocm/hcc/bin:\$PATH;" >> ~/.profile;
+export PATH=/usr/local/cuda-12/bin:$PATH;
 echo "export PATH=/usr/local/cuda-12/bin:\$PATH;" >> ~/.profile;
 source ~/.profile;
 

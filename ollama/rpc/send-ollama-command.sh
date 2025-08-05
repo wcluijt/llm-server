@@ -8,8 +8,8 @@ cd ./ollama-rpc-GH-10844;
 OLLAMA_RPC_SERVERS=${OLLAMA_RPC_SERVERS}
 
 OLLAMA_RPC_SERVERS=$OLLAMA_RPC_SERVERS \
-OLLAMA_LIBRARY_PATH=./build/lib/ollama:/usr/local/cuda-12 \
-LD_LIBRARY_PATH=./build/lib/ollama:/usr/local/cuda-12 \
+OLLAMA_LIBRARY_PATH=./build/lib/ollama:/usr/local/cuda-12:/opt/rocm/hcc/bin:/opt/rocm/hip/bin:/opt/rocm/bin \
+LD_LIBRARY_PATH=./build/lib/ollama:/usr/local/cuda-12:/opt/rocm/hcc/bin:/opt/rocm/hip/bin:/opt/rocm/bin \
 NVIDIA_DRIVER_CAPABILITIES=compute,utility \
 NVIDIA_VISIBLE_DEVICES=all \
 OLLAMA_HOST=0.0.0.0:11434 \
