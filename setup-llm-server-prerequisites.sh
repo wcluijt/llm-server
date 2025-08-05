@@ -3,9 +3,21 @@
 CURRENT_SCRIPT_DIR=$(cd -P -- "$(dirname -- "$0")" && pwd -P);
 cd $CURRENT_SCRIPT_DIR;
 
+./setup-llm-user-prerequisites.sh;
+
 ### Install Git
 sudo apt-get update;
 sudo apt-get install -y git;
+
+### Install Go
+sudo apt-get update;
+sudo apt-get install -y curl;
+curl -LO https://go.dev/dl/go1.24.5.linux-amd64.tar.gz;
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.24.5.linux-amd64.tar.gz;
+
+### Install CMake
+sudo apt-get update;
+sudo apt-get install -y cmake;
 
 ### Install Docker CE
 sudo apt-get update;
@@ -20,6 +32,7 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 ### Install AMD Drivers
 sudo apt-get update;
 sudo apt-get install -y linux-headers-$(uname -r);
+sudo apt-get install -y firmware-misc-nonfree firmware-amd-graphics libgl1-mesa-dri libglx-mesa0 mesa-vulcan-drivers xserver-xorg-video-all;
 sudo apt-get install -y wget;
 wget https://repo.radeon.com/amdgpu-install/6.4.2/ubuntu/jammy/amdgpu-install_6.4.60402-1_all.deb;
 sudo apt-get install -y ./amdgpu-install_6.4.60402-1_all.deb;

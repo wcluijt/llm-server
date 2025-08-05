@@ -12,24 +12,28 @@ git branch rpc-GH-10844 4183bb0574a28b73276efef944107d0c45d79c95;
 git checkout rpc-GH-10844;
 git apply --3way ../GH-10844.patch;
 
-### Install Go
-curl -LO https://go.dev/dl/go1.24.5.linux-amd64.tar.gz;
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.24.5.linux-amd64.tar.gz;
+### Go binaries
 export PATH=/usr/local/go/bin:$PATH;
-echo "export PATH=/usr/local/go/bin:\$PATH;" >> ~/.profile;
-source ~/.profile;
-which go && go version;
 
-### Setup Additional PATH values
+### AMD / ROCm binaries
 export PATH=/opt/rocm/hcc/bin:/opt/rocm/hip/bin:/opt/rocm/bin:/opt/rocm/hcc/bin:$PATH;
-echo "export PATH=/opt/rocm/hcc/bin:/opt/rocm/hip/bin:/opt/rocm/bin:/opt/rocm/hcc/bin:\$PATH;" >> ~/.profile;
+
+### Nvidia / CUDA binaries
 export PATH=/usr/local/cuda-12/bin:$PATH;
-echo "export PATH=/usr/local/cuda-12/bin:\$PATH;" >> ~/.profile;
-source ~/.profile;
+
+### Install Go
+which go || ( \
+curl -LO https://go.dev/dl/go1.24.5.linux-amd64.tar.gz; \
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.24.5.linux-amd64.tar.gz; \
+export PATH=/usr/local/go/bin:$PATH; \
+which go && go version; \
+);
 
 ### Install CMake
-sudo apt-get update;
-sudo apt-get install -y cmake;
+which cmake || ( \
+sudo apt-get update; \
+sudo apt-get install -y cmake; \
+);
 
 ### Build Ollama RPC Server
 cmake -B build;
