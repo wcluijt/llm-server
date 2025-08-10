@@ -8,7 +8,8 @@ git clone https://github.com/ollama/ollama.git ollama-rpc-GH-10844;
 cd ./ollama-rpc-GH-10844;
 git checkout main;
 git pull;
-git branch rpc-GH-10844 4183bb0574a28b73276efef944107d0c45d79c95;
+#git branch rpc-GH-10844 4183bb0574a28b73276efef944107d0c45d79c95;
+git branch rpc-GH-10844 2c776f07805022221e7640a643777818528d0a27;
 git checkout rpc-GH-10844;
 git apply --3way ../GH-10844.patch;
 
