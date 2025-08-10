@@ -21,6 +21,12 @@ export PATH=/opt/rocm/hcc/bin:/opt/rocm/hip/bin:/opt/rocm/bin:/opt/rocm/hcc/bin:
 ### Nvidia / CUDA binaries
 export PATH=/usr/local/cuda-12/bin:$PATH;
 
+### Install G++
+which g++ || ( \
+sudo apt-get update; \
+sudo apt-get install -y g++; \
+);
+
 ### Install Go
 which go || ( \
 curl -LO https://go.dev/dl/go1.24.5.linux-amd64.tar.gz; \
