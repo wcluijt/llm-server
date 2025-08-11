@@ -1,5 +1,5 @@
 System:
-  Kernel: 6.1.0-37-amd64 arch: x86_64 bits: 64 compiler: gcc v: 12.2.0 Console: pty pts/1
+  Kernel: 6.1.0-37-amd64 arch: x86_64 bits: 64 compiler: gcc v: 12.2.0 Console: pty pts/2
     Distro: Debian GNU/Linux 12 (bookworm)
 Machine:
   Type: Desktop System: Dell product: Dell XPS420 v: N/A serial: <filter>
@@ -7,11 +7,12 @@ Machine:
 CPU:
   Info: quad core model: Intel Core2 Quad Q9450 bits: 64 type: MCP arch: Penryn rev: 7 cache:
     L1: 256 KiB L2: 12 MiB
-  Speed (MHz): avg: 2660 min/max: N/A cores: 1: 2660 2: 2660 3: 2660 4: 2660 bogomips: 21277
-  Flags: ht lm nx pae sse sse2 sse3 sse4_1 ssse3 vmx
+  Speed (MHz): avg: 2659 min/max: N/A cores: 1: 2659 2: 2659 3: 2659 4: 2659 bogomips: 21275
+  Flags: ht lm nx pae sse sse2 sse3 sse4_1 ssse3
 Graphics:
-  Device-1: AMD RV670 [Radeon HD 3870] vendor: Dell driver: N/A arch: TeraScale bus-ID: 01:00.0
-  Display: server: X.org v: 1.21.1.7 driver: N/A tty: 238x61
+  Device-1: AMD RV670 [Radeon HD 3870] vendor: Dell driver: radeon v: kernel arch: TeraScale
+    bus-ID: 01:00.0 temp: 82.0 C
+  Display: server: X.org v: 1.21.1.7 driver: gpu: radeon note: X driver n/a tty: 238x61
   API: OpenGL Message: GL data unavailable in console for root.
 Audio:
   Device-1: AMD RV670/680 HDMI Audio [Radeon HD 3690/3800 Series] vendor: Dell
@@ -28,15 +29,15 @@ Network:
 RAID:
   Hardware-1: Intel SATA Controller [RAID mode] driver: ahci v: 3.0 bus-ID: 00:1f.2
 Drives:
-  Local Storage: total: 1.82 TiB used: 43.58 GiB (2.3%)
+  Local Storage: total: 1.82 TiB used: 24.84 GiB (1.3%)
   ID-1: /dev/sda vendor: Western Digital model: WD20EADS-00R6B0 size: 1.82 TiB
 Partition:
-  ID-1: / size: 1.79 TiB used: 43.58 GiB (2.4%) fs: ext4 dev: /dev/sda1
+  ID-1: / size: 1.79 TiB used: 24.84 GiB (1.4%) fs: ext4 dev: /dev/sda1
 Swap:
   ID-1: swap-1 type: partition size: 976 MiB used: 0 KiB (0.0%) dev: /dev/sda5
 Sensors:
-  System Temperatures: cpu: 44.0 C mobo: N/A
-  Fan Speeds (RPM): cpu: 1170 mobo: 1456
+  System Temperatures: cpu: 50.0 C mobo: N/A gpu: radeon temp: 84.0 C
+  Fan Speeds (RPM): cpu: 1203 mobo: 1486
 Info:
-  Processes: 112 Uptime: 27m Memory: 3.76 GiB used: 519.5 MiB (13.5%) Init: systemd
-  target: graphical (5) Compilers: gcc: 12.2.0 Packages: 1183 Shell: Sudo v: 1.9.13p3 inxi: 3.3.26
+  Processes: 122 Uptime: 7m Memory: 3.76 GiB used: 538.2 MiB (14.0%) Init: systemd
+  target: graphical (5) Compilers: gcc: 12.2.0 Packages: 1064 Shell: Sudo v: 1.9.13p3 inxi: 3.3.26
