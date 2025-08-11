@@ -1,0 +1,120 @@
+
+
+2025/08/10 21:31:25 rpc_server.go:26: Starting RPC server on 0.0.0.0:50052
+load_backend: loaded CPU backend from /home/llm/llm-server/ollama/rpc/ollama-rpc-GH-10844/build/lib/ollama/libggml-cpu-x64.so
+2025/08/10 21:31:25 ggml.go:105: INFO system CPU.0.LLAMAFILE=1 CPU.1.LLAMAFILE=1 compiler=cgo(gcc)
+2025/08/10 21:31:25 rpc_server.go:37: RPC server started on 0.0.0.0:50052. Press Ctrl+C to exit.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+WARNING: Host ('0.0.0.0') is != '127.0.0.1'
+         Never expose the RPC server to an open network!
+         This is an experimental feature and is not secure!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+create_backend: using CPU backend
+Accepted client connection, free_mem=4035153920, total_mem=4035153920
+Client connection closed
+Accepted client connection, free_mem=4035153920, total_mem=4035153920
+Client connection closed
+Accepted client connection, free_mem=4035153920, total_mem=4035153920
+Client connection closed
+Accepted client connection, free_mem=4035153920, total_mem=4035153920
+Client connection closed
+Accepted client connection, free_mem=4035153920, total_mem=4035153920
+Client connection closed
+Accepted client connection, free_mem=4035153920, total_mem=4035153920
+[set_tensor] saved to '/home/llm/.ollama/rpc/05316caf4d2a1508'
+[set_tensor] saved to '/home/llm/.ollama/rpc/e448a201fe45d5ce'
+[set_tensor] saved to '/home/llm/.ollama/rpc/980e3377a80e6350'
+[set_tensor] saved to '/home/llm/.ollama/rpc/1bb7786290de7e92'
+[set_tensor] saved to '/home/llm/.ollama/rpc/a22ae1b3bd58231d'
+[set_tensor] saved to '/home/llm/.ollama/rpc/d64b6b8390c1ca8b'
+[set_tensor] saved to '/home/llm/.ollama/rpc/e473b15bdf378972'
+[set_tensor] saved to '/home/llm/.ollama/rpc/bfcd247bc88f0762'
+[set_tensor] saved to '/home/llm/.ollama/rpc/3254196f67e3f73e'
+[set_tensor] saved to '/home/llm/.ollama/rpc/ab3f74130322d42e'
+[set_tensor] saved to '/home/llm/.ollama/rpc/c31f3e6fcaa78ca3'
+[set_tensor] saved to '/home/llm/.ollama/rpc/561db4e0e2b39c62'
+[set_tensor] saved to '/home/llm/.ollama/rpc/28a9e94dedbc3f3f'
+[set_tensor] saved to '/home/llm/.ollama/rpc/189a83ba1a1ffda0'
+[set_tensor] saved to '/home/llm/.ollama/rpc/957bbca8cfd0e83c'
+[set_tensor] saved to '/home/llm/.ollama/rpc/587b56e42009af64'
+[set_tensor] saved to '/home/llm/.ollama/rpc/16aab51468a71c7b'
+[set_tensor] saved to '/home/llm/.ollama/rpc/03f08ea350ad31e4'
+[set_tensor] saved to '/home/llm/.ollama/rpc/0101af605c568281'
+[set_tensor] saved to '/home/llm/.ollama/rpc/24570faaadccd562'
+[set_tensor] saved to '/home/llm/.ollama/rpc/f5a91f8c148804b6'
+[set_tensor] saved to '/home/llm/.ollama/rpc/82923db062bbaea4'
+[set_tensor] saved to '/home/llm/.ollama/rpc/d459c3444059d26e'
+[set_tensor] saved to '/home/llm/.ollama/rpc/2f54144452033cd5'
+[set_tensor] saved to '/home/llm/.ollama/rpc/cf23ff9ce8b3d799'
+[set_tensor] saved to '/home/llm/.ollama/rpc/607c3e0c508f73b6'
+[set_tensor] saved to '/home/llm/.ollama/rpc/0574f74adfa2550e'
+[set_tensor] saved to '/home/llm/.ollama/rpc/098c98373ab6a756'
+[set_tensor] saved to '/home/llm/.ollama/rpc/29a6dd3ed6ac6848'
+[set_tensor] saved to '/home/llm/.ollama/rpc/265e705256ec9aed'
+[set_tensor] saved to '/home/llm/.ollama/rpc/0743e7942f6924b2'
+[set_tensor] saved to '/home/llm/.ollama/rpc/0425082cc5d49778'
+[set_tensor] saved to '/home/llm/.ollama/rpc/6a9fb545a06e07fd'
+[set_tensor] saved to '/home/llm/.ollama/rpc/aa15356dd676f0ed'
+[set_tensor] saved to '/home/llm/.ollama/rpc/9bb98c9daea8ced3'
+[set_tensor] saved to '/home/llm/.ollama/rpc/c7e60a3a4b516ab3'
+[set_tensor] saved to '/home/llm/.ollama/rpc/0818c16ed95b7d2a'
+[set_tensor] saved to '/home/llm/.ollama/rpc/4aae250e750d5e34'
+[set_tensor] saved to '/home/llm/.ollama/rpc/5478ddfc871d93b2'
+[set_tensor] saved to '/home/llm/.ollama/rpc/fc1548fd70102a0e'
+[set_tensor] saved to '/home/llm/.ollama/rpc/4b8b65611fa517c6'
+[set_tensor] saved to '/home/llm/.ollama/rpc/4bf41780118851db'
+[set_tensor] saved to '/home/llm/.ollama/rpc/2823bb1354069b37'
+[set_tensor] saved to '/home/llm/.ollama/rpc/75a002f927c435d0'
+[set_tensor] saved to '/home/llm/.ollama/rpc/39b20d523734673e'
+Client connection closed
+Accepted client connection, free_mem=4035153920, total_mem=4035153920
+Client connection closed
+Accepted client connection, free_mem=4035153920, total_mem=4035153920
+Client connection closed
+Accepted client connection, free_mem=4035153920, total_mem=4035153920
+Client connection closed
+Accepted client connection, free_mem=4035153920, total_mem=4035153920
+Client connection closed
+Accepted client connection, free_mem=4035153920, total_mem=4035153920
+Client connection closed
+Accepted client connection, free_mem=4035153920, total_mem=4035153920
+Client connection closed
+Accepted client connection, free_mem=4035153920, total_mem=4035153920
+Client connection closed
+Accepted client connection, free_mem=4035153920, total_mem=4035153920
+Client connection closed
+Accepted client connection, free_mem=4035153920, total_mem=4035153920
+Client connection closed
+Accepted client connection, free_mem=4035153920, total_mem=4035153920
+Client connection closed
+Accepted client connection, free_mem=4035153920, total_mem=4035153920
+[set_tensor] saved to '/home/llm/.ollama/rpc/1f5c259d7fdf71a4'
+[set_tensor] saved to '/home/llm/.ollama/rpc/89105ba523ab1322'
+[set_tensor] saved to '/home/llm/.ollama/rpc/0664c6ec9700504f'
+[set_tensor] saved to '/home/llm/.ollama/rpc/71c5cb8547bc469c'
+[set_tensor] saved to '/home/llm/.ollama/rpc/c0b1af67783c2c8c'
+[set_tensor] saved to '/home/llm/.ollama/rpc/44ab01e2c256d08c'
+[set_tensor] saved to '/home/llm/.ollama/rpc/1f29af6f0bdc0844'
+[set_tensor] saved to '/home/llm/.ollama/rpc/25d4603356e2d1d4'
+[set_tensor] saved to '/home/llm/.ollama/rpc/5411972975d84327'
+[set_tensor] saved to '/home/llm/.ollama/rpc/3464b82c52da6c0e'
+[set_tensor] saved to '/home/llm/.ollama/rpc/9ad39ef4a6a9a06a'
+[set_tensor] saved to '/home/llm/.ollama/rpc/201db14c0bf9f531'
+[set_tensor] saved to '/home/llm/.ollama/rpc/6500c25b249512b8'
+[set_tensor] saved to '/home/llm/.ollama/rpc/175415dfffed4e3a'
+[set_tensor] saved to '/home/llm/.ollama/rpc/ededac57df42a0ff'
+[set_tensor] saved to '/home/llm/.ollama/rpc/5c11b727a5853f43'
+[set_tensor] saved to '/home/llm/.ollama/rpc/7f55f96ad9eb661d'
+[set_tensor] saved to '/home/llm/.ollama/rpc/361508e75590950a'
+[set_tensor] saved to '/home/llm/.ollama/rpc/5e0366579c743ec5'
+[set_tensor] saved to '/home/llm/.ollama/rpc/625e16c091f35b71'
+[set_tensor] saved to '/home/llm/.ollama/rpc/ef08f2d412d120e1'
+[set_tensor] saved to '/home/llm/.ollama/rpc/d4418a8ead6081b9'
+[set_tensor] saved to '/home/llm/.ollama/rpc/ed4247c9f7951016'
+[set_tensor] saved to '/home/llm/.ollama/rpc/c5c27b3a88b6bfc0'
+[set_tensor] saved to '/home/llm/.ollama/rpc/19b9010b7ad471d2'
+[set_tensor] saved to '/home/llm/.ollama/rpc/b8941f555ebba35a'
+[set_tensor] saved to '/home/llm/.ollama/rpc/b1b3af9439bcc79c'
+
