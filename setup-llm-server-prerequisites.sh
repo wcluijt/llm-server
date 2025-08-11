@@ -47,11 +47,11 @@ wget https://repo.radeon.com/amdgpu-install/6.4.2/ubuntu/jammy/amdgpu-install_6.
 sudo apt-get install -y ./amdgpu-install_6.4.60402-1_all.deb; \
 sudo apt-get update; \
 sudo apt-get install -y python3-setuptools python3-wheel; \
-#sudo usermod -aG render,video $LOGNAME; \
 sudo apt-get install -y rocm; \
 sudo apt-get install -y amdgpu-dkms; \
 sudo amdgpu-install -y --usecase=graphics,rocm; \
 );
+#sudo usermod -aG render,video $LOGNAME;
 
 ### Install Nvidia Drivers
 (sudo inxi -Fxz | grep -i " nvidia " > /dev/null) && ( \
@@ -67,6 +67,7 @@ sudo apt-get install -y cuda-drivers; \
 sudo apt-get install -y nvidia-container-toolkit; \
 sudo nvidia-ctk runtime configure --runtime=docker; \
 sudo systemctl restart docker; \
+sudo mv /etc/modprobe.d/nvidia.conf.dpkg-new /etc/modprobe.d/nvidia.conf; \
 );
 
 #sudo systemctl reboot
